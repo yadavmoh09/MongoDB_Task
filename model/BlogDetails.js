@@ -66,6 +66,14 @@ const postSchema = new Schema({
     type: [String],
     required: false,
   },
+  likes: {
+    type: Number,
+    default: 0,
+  },
+  shares: {
+    type: Number,
+    default: 0,
+  },
   comments: [commentSchema],
 });
 
